@@ -1,0 +1,85 @@
+img{
+    width: 200px;
+    padding: 15px;
+    float: left;
+}
+h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.container{
+    padding: 15px;
+    display: grid;
+    height: 200px;
+    gap: 20px;
+    column-gap: 5px;
+    justify-content:  center;
+}
+
+#imagem{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#dados-pessoais{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#conhecimentos{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#formacao-academica{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#experiencias-profissionais{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.container div #dados-pessoais, #formacao-academica, #experiencias-profissionais, #conhecimentos, #dados-pessoais{
+    padding: 10px;
+    border: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+    img {
+      width: 100%;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+    #imagem {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    #dados-pessoais {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    #conhecimentos {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    #formacao-academica {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    #experiencias-profissionais {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+  }
+  
